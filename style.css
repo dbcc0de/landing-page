@@ -1,0 +1,110 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+/* resets */
+
+body,
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+body {
+  background-color: hsl(257, 40%, 49%);
+  background-image: url(images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 40px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+h1 img {
+  width: 200px;
+}
+
+main {
+  text-align: center;
+}
+
+#image-container img {
+  width: 100%;
+}
+
+main h2 {
+  margin-top: 60px;
+  font-family: "Poppins", sans-serif;
+}
+
+main p {
+  margin: 20px 0;
+}
+
+main a {
+  text-decoration: none;
+  background-color: white;
+  color: hsl(257, 40%, 49%);
+  padding: 10px 100px;
+  border-radius: 50px;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+footer i.fa-brands {
+  padding: 5px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: url(images/bg-desktop.svg);
+    background-size: cover;
+  }
+  main {
+    display: flex;
+    text-align: left;
+    align-items: center;
+  }
+
+  main h2 {
+    margin-top: 0;
+  }
+
+  #image-container,
+  #about-container {
+    flex: 1;
+  }
+  #image-container {
+    margin-right: 10px;
+  }
+  #about-container {
+    margin-left: 10px;
+  }
+
+  footer {
+    justify-content: flex-end;
+  }
+}
